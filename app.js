@@ -9,7 +9,6 @@ app.get('/' , (req, res) => {
   res.render('index')
 })
 app.get('/:page' , (req, res) => {
-  console.log('req.params.page',req.params.page)
   const clickpage = req.params.page
   res.render('show', {page : clickpage})
 })
